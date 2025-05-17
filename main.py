@@ -5,8 +5,13 @@
 
 
 def print_hi(name):
+    """Return a greeting for the given name and print it."""
+    if not isinstance(name, str):
+        raise TypeError("name must be a string")
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+    message = f"Hi, {name}"
+    print(message)  # Press ⌘F8 to toggle the breakpoint.
+    return message
 
 
 # Press the green button in the gutter to run the script.
